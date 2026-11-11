@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff5f8">
+    <meta name="description" content="A little birthday journey, made just for you.">
+    <title>A little journey for you — Happy Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="asset/tabIcon.gif">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="welcome-screen" id="welcome-screen" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+      <div class="welcome-content">
+        <p class="welcome-eyebrow">A little wish, just for you</p>
+        <h1 class="welcome-title" id="welcome-title">Make a wish.</h1>
+        <div class="cake-scene" aria-hidden="true">
+          <div class="cake-glow"></div>
+          <div class="cake">
+            <div class="cake-top"></div>
+            <div class="cake-base"></div>
+            <div class="cake-plate"></div>
+            <div class="cake-candle"></div>
+          </div>
+          <button class="candle-button" id="candle-button" type="button" aria-label="Blow out the candle and enter">
+            <span class="candle-flame"></span>
+          </button>
+        </div>
+        <p class="welcome-prompt">Blow the candle for surprise (click) <span aria-hidden="true">✦</span></p>
+      </div>
+    </section>
+
+    <div class="page-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="A little journey, home">
+        <span class="wordmark-heart" aria-hidden="true">♥</span> a little journey
+      </a>
+      <a class="header-link" href="#the-surprise">Your surprise <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A birthday keepsake <span class="eyebrow-line"></span></p>
+          <h2 id="hero-title" tabindex="-1">A Journey Through Time,<br>A Story Written by <em>You.</em></h2>
+          <p class="hero-intro">Before I knew you, you were already living a thousand little stories. And somehow, life brought our stories together.</p>
+          <a class="button button-primary" href="#chapter-one">Start the journey <span aria-hidden="true">↓</span></a>
+          <p class="scroll-note"><span class="scroll-dot" aria-hidden="true"></span> Best enjoyed one little scroll at a time</p>
+        </div>
+        <div class="hero-art" aria-label="Birthday cake and flowers">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="/asset/together.jpeg" alt="Two friends sharing a happy moment outdoors">
+          </div>
+          <span class="photo-sticker sticker-top" aria-hidden="true">made with love</span>
+          <span class="photo-sticker sticker-bottom" aria-hidden="true">✿</span>
+          <span class="hero-sparkle sparkle-one" aria-hidden="true">✦</span>
+          <span class="hero-sparkle sparkle-two" aria-hidden="true">✧</span>
+        </div>
+        <div class="hero-bottom" aria-hidden="true"><span>01</span><span class="hero-bottom-line"></span><span>THE BEGINNING</span></div>
+      </section>
+
+      <section class="intro section-wrap" aria-labelledby="intro-title">
+        <p class="eyebrow">A little note before we go</p>
+        <h2 id="intro-title">The best stories are<br><em>made of little things.</em></h2>
+        <p>So here's a tiny collection of the laughs, the lovely days, and all the moments in between. Scroll when you're ready — each stop has a little something waiting.</p>
+        <span class="intro-flower" aria-hidden="true">✿</span>
+      </section>
+
+      <section class="journey" aria-label="Birthday journey through favorite memories">
+        <div class="journey-heading section-wrap">
+          <p class="eyebrow">Four little chapters</p>
+          <!-- <h2>Our kind of <em>magic.</em></h2> -->
+        </div>
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"><span id="timeline-progress"></span></div>
+
+          <article class="memory-card memory-left" id="chapter-one" data-chapter="01">
+            <div class="memory-copy">
+              <p class="chapter-label"><span>01</span> THE GOOD OLD DAYS</p>
+                <h3>Before the World<br>Knew <em>You</em></h3>
+              <p class="memory-tease">Before you became who you are today, you were once a little dreamer, collecting memories in a world full of possibilities.</p>
+              <p class="memory-prompt"><span aria-hidden="true">✧</span> A little photo surprise is waiting</p>
+              <button class="reveal-button" type="button" aria-expanded="false" aria-controls="memory-one">Unwrap the photo <span aria-hidden="true">✦</span></button>
+            </div>
+            <div class="memory-content" id="memory-one" hidden>
+              <figure class="memory-photo photo-tall">
+                <img src="./asset/bocil.jpeg" alt="Two friends sharing a happy moment outdoors" loading="lazy">
+                <figcaption><span>chapter one</span> A Little Dreamer</figcaption>
+              </figure>
+              <p class="memory-caption">Once, you were just a little girl with a thousand dreams and a heart full of wonder.</p>
+            </div>
+          </article>
+
+          <article class="memory-card memory-right" data-chapter="02">
+            <div class="memory-copy">
+              <p class="chapter-label"><span>02</span> THE YEARS THAT MADE YOU</p>
+              <h3>You grew, you changed, <br>you laughed, you cried <em>and you discovered pieces of yourself along the way.</em></h3>
+              <p class="memory-tease">Through every change, every smile, and every little heartbreak, you were slowly becoming the wonderful person I would one day fall in love with.</p>
+              <p class="memory-prompt"><span aria-hidden="true">✧</span> A little photo surprise is waiting</p>
+              <button class="reveal-button" type="button" aria-expanded="false" aria-controls="memory-two">Unwrap the photo <span aria-hidden="true">✦</span></button>
+            </div>
+            <div class="memory-content" id="memory-two" hidden>
+              <figure class="memory-photo photo-wide">
+                <img src="./asset/teen.jpeg" alt="Golden sunlight over a dreamy open landscape" loading="lazy">
+                <figcaption><span>chapter two</span> Growing Up</figcaption>
+              </figure>
+              <p class="memory-caption">Slowly discovering the world, finding your own way, and becoming the person you were meant to be.</p>
+            </div>
+          </article>
+
+          <article class="memory-card memory-left" data-chapter="03">
+            <div class="memory-copy">
+              <p class="chapter-label"><span>03</span> RIGHT HERE, RIGHT NOW</p>
+              <h3>My Favorite Chapter<br>Is <em>You</em></h3>
+              <p class="memory-tease">The little girl who once dreamed of the world has grown into a woman with dreams of her own, carrying strength and beauty in ways she may not even realize.</p>
+              <p class="memory-prompt"><span aria-hidden="true">✧</span> A little photo surprise is waiting</p>
+              <button class="reveal-button" type="button" aria-expanded="false" aria-controls="memory-three">Unwrap the photo <span aria-hidden="true">✦</span></button>
+            </div>
+            <div class="memory-content" id="memory-three" hidden>
+              <figure class="memory-photo photo-tall">
+                <img src="./asset/now.jpeg" alt="A woman standing in a field of flowers, looking out at the horizon" loading="lazy">
+                <figcaption><span>chapter three</span> A Beautiful Soul, Growing Stronger</figcaption>
+              </figure>
+              <p class="memory-caption">You've grown into someone who knows what she wants, someone who keeps chasing her dreams and finding her own place in this big world.</p>
+            </div>
+          </article>
+
+          <article class="memory-card memory-right" data-chapter="04">
+            <div class="memory-copy">
+              <p class="chapter-label"><span>04</span> THE DAY OUR WORLDS COLLIDED</p>
+              <h3>When Two Stories<br>Became <em>One.</em></h3>
+              <p class="memory-tease">Your story met mine, and suddenly, I had someone new to look forward to in every tomorrow.</p>
+              <p class="memory-prompt"><span aria-hidden="true">✧</span> A little photo surprise is waiting</p>
+              <button class="reveal-button" type="button" aria-expanded="false" aria-controls="memory-four">Unwrap the photo <span aria-hidden="true">✦</span></button>
+            </div>
+            <div class="memory-content" id="memory-four" hidden>
+              <figure class="memory-photo photo-wide">
+                <img src="./asset/payung.jpeg" alt="A peaceful starry night sky full of possibility" loading="lazy">
+                <figcaption><span>chapter four</span> Little Adventures, Endless Memories</figcaption>
+              </figure>
+              <p class="memory-caption">Among all the people in this world, somehow, life brought me to you.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="birthday-note" id="the-surprise" aria-labelledby="surprise-title">
+        <div class="note-decoration" aria-hidden="true">✿</div>
+        <p class="eyebrow">One last little thing</p>
+        <h2 id="surprise-title">A wish, just <em>for you.</em></h2>
+        <p class="note-intro">Every good journey deserves a little wish at the end. Ready?</p>
+        <button class="button button-primary surprise-button" id="surprise-button" type="button" aria-expanded="false">Open your birthday wish <span aria-hidden="true">♡</span></button>
+        <div class="birthday-message" id="birthday-message" hidden>
+          <span class="message-heart" aria-hidden="true">♥</span>
+          <p>Happy Birthday, Benedicta Loveni Melkisedek</p>
+          <p class="message-small">May this next trip around the sun be your happiest one yet. You deserve all the good things — today and every day.</p>
+          <br>
+          <P></P>
+          <span class="message-signoff">With so much love, Ignatius Kurniawan Pranajaya</span>
+        </div>
+        <p class="note-signoff">The best is yet to come <span aria-hidden="true">✦</span></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#home"><span class="wordmark-heart" aria-hidden="true">♥</span> a little journey</a>
+      <p>Made with love, just for you.</p>
+      <!-- <a class="back-to-top" href="#home">Back to the beginning ↑</a> -->
+    </footer>
+
+    <audio id="background-music" autoplay loop preload="auto" playsinline>
+      <source src="asset/Ed%20Sheeran%20-%20Photograph%20(Lyrics).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
