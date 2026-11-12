@@ -16,6 +16,7 @@ pageSections.forEach((section) => section.setAttribute("inert", ""));
 candleButton.focus();
 
 candleButton.addEventListener("click", () => {
+  startBackgroundMusic();
   candleButton.disabled = true;
   welcomeScreen.classList.add("is-extinguished");
   window.setTimeout(() => {
@@ -50,7 +51,7 @@ function revealCard(card) {
   const button = card.querySelector(".reveal-button");
   card.querySelector(".memory-content").hidden = false;
   button.setAttribute("aria-expanded", "true");
-  button.innerHTML = 'Close this memory <span aria-hidden="true">↙</span>';
+  button.innerHTML = 'Close <span aria-hidden="true">↙</span>';
 }
 
 function hideCard(card) {
@@ -82,10 +83,7 @@ surpriseButton.addEventListener("click", () => {
 });
 
 function startBackgroundMusic() {
-  backgroundMusic.play().then(() => {
-    document.removeEventListener("pointerdown", startBackgroundMusic);
-    document.removeEventListener("keydown", startBackgroundMusic);
-  }).catch((error) => {
+  backgroundMusic.play().catch((error) => {
     if (error.name !== "NotAllowedError") {
       console.error("Could not play the background song:", error);
     }
@@ -95,9 +93,6 @@ function startBackgroundMusic() {
 backgroundMusic.addEventListener("error", () => {
   console.error("Could not load the background song:", backgroundMusic.currentSrc);
 });
-document.addEventListener("pointerdown", startBackgroundMusic);
-document.addEventListener("keydown", startBackgroundMusic);
-startBackgroundMusic();
 
 window.addEventListener("scroll", updateProgress, { passive: true });
 window.addEventListener("resize", updateProgress);
